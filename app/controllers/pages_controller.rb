@@ -16,4 +16,8 @@ class PagesController < ApplicationController
   def forms
   end
 
+  def quiz_template
+
+  end
+
 end

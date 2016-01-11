@@ -1,4 +1,66 @@
 $navbar-height:60px;
 $navbar-border-radius: 0;
+$med-dark-gray:#363636;
+$dark-gray:#252525;
+$squash:#eca349;
+
+/*
+COLORS:
+Squash: #eca349;
+Stone: #f2e5d5;
+Med Gray: #6e7f8c;
+Dark Gray #474f56;
+Med Blue #0881b9;
+Dark Blue #262f41;
+
+*/
+
 
 .navbar-brand img {margin-top:-10px;}
+
+// QUIZ TEMPLATE STYLES
+#quiz-template {
+  height:100vh;
+  background-color:$med-dark-gray;
+  margin-top:-20px;
+}
+
+#quiz-template-nav {
+  ul {margin:10px 0px;}
+  a {
+    color:$squash;
+    &:hover {
+      color:lighten($squash, 10%);
+      background-color:lighten($med-dark-gray, 10%);
+    }
+  }
+}
+
+#quiz-template-quiz {
+  padding:0px 30px;
+
+  
+  
+
+  #quiz-inner {
+    padding:20px 20px;
+    background-color:$dark-gray;
+    height:85vh;
+
+    border-radius:7px;
+  }
+
+  #gallery-back-next {
+    padding:0px 0px 20px 0px;
+    a {
+      color:rgba(255,255,255,.3);
+
+    }
+
+   
+
+  }
+  
+
+
+}
