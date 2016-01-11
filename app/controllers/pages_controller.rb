@@ -4,4 +4,16 @@ class PagesController < ApplicationController
 
   end
 
+  def colors
+  end
+
+  def typography
+  end
+
+  def panels
+  end
+
+  def forms
+  end
+
 end
