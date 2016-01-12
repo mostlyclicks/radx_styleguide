@@ -35,17 +35,23 @@
         </div>
 
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-5" id="quiz-report">
             <h3>Rad-Pattern: 6</h3>
             <h4>Clinical History:</h4>
-            <p>50 year old male for prostate MRI</p>
+            <p>50 year old male for prostate MRI. This is a sample form.</p>
 
-            <form>
+            <div class="quizbox">
+            <%= render 'shared/quiz_form_filler' %>
 
-            </form>
+
+
+
+            </div>
+
+            
 
           </div>
-          <div class="col-md-6">
+          <div class="col-md-7">
             <%= image_tag 'study.png', class: 'img-responsive' %>
           </div>
         </div>

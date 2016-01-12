@@ -4,6 +4,10 @@ $med-dark-gray:#363636;
 $dark-gray:#252525;
 $squash:#eca349;
 
+$white5:rgba(255,255,255,.5);
+$white3:rgba(255,255,255,.3);
+$white1:rgba(255,255,255,.1);
+
 /*
 COLORS:
 Squash: #eca349;
@@ -39,16 +43,73 @@ Dark Blue #262f41;
 #quiz-template-quiz {
   padding:0px 30px;
 
-  
-  
-
   #quiz-inner {
     padding:20px 20px;
     background-color:$dark-gray;
-    height:85vh;
+    min-height:85vh;
 
     border-radius:7px;
+
   }
+
+  #quiz-report {
+    h3 {border-bottom:1px dotted $white3;}
+    h3, h4 {color:$white5;}
+    p, label {color:$white5;}
+
+    .question {font-weight:bold;color:$white5;}
+  }
+
+div.quizbox {
+  border:1px solid $white1;
+  height:630px;
+  padding:20px;
+  display:block;
+  overflow:scroll;
+  background-color:lighten($dark-gray, 2%);
+
+  -moz-box-shadow:    inset  0  15px 15px -15px rgba(0,0,0,.5), 
+                      inset  0 -15px 15px -15px rgba(0,0,0,.5);
+  -webkit-box-shadow: inset  0  15px 15px -15px rgba(0,0,0,.5), 
+                      inset  0 -15px 15px -15px rgba(0,0,0,.5);
+  box-shadow:         inset  0  15px 15px -15px rgba(0,0,0,.5), 
+                      inset  0 -15px 15px -15px rgba(0,0,0,.5),;
+}
+
+//CHECKBOX STYLES
+  .quiz-checkbox {
+    -webkit-appearance: none;
+    border:1px solid $white5;
+    padding:7px;
+    border-radius:2px;
+    display:inline-block;
+    position: relative;
+    top:2px;
+    margin-right:5px;
+
+  }
+
+  .quiz-checkbox:active, .quiz-checkbox:checked:active {
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+  }
+
+  .quiz-checkbox:checked {
+    background-color: #e9ecee;
+    border: 1px solid #adb8c0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+    color: #99a1a7;
+  }
+
+  .quiz-checkbox:checked:after {
+    content: '\2714';
+    font-size: 14px;
+    position: absolute;
+    top: -2px;
+    left: 3px;
+    color: #000000;
+  }
+
+//CHECKBOX STYLES END
 
   #gallery-back-next {
     padding:0px 0px 20px 0px;
@@ -56,11 +117,5 @@ Dark Blue #262f41;
       color:rgba(255,255,255,.3);
 
     }
-
-   
-
   }
-  
-
-
 }
