@@ -53,17 +53,18 @@ Dark Blue #262f41;
   }
 
   #quiz-report {
-    h3 {border-bottom:1px dotted $white3;}
+    h3 {border-bottom:1px dotted $white3;font-weight:200;padding-bottom:.5em;}
     h3, h4 {color:$white5;}
-    p, label {color:$white5;}
+    p, label {color:$white5;font-weight:200;}
 
-    .question {font-weight:bold;color:$white5;}
+    .question {color:$white5;font-size:15px;font-weight:200;}
   }
 
 div.quizbox {
   border:1px solid $white1;
-  height:630px;
+  height:620px;
   padding:20px;
+  margin-top:20px;
   display:block;
   overflow:scroll;
   background-color:lighten($dark-gray, 2%);
