@@ -1,8 +1,13 @@
 $navbar-height:60px;
 $navbar-border-radius: 0;
+
+
 $med-dark-gray:#363636;
 $dark-gray:#252525;
 $squash:#eca349;
+$stone:#e6e1d5;
+$med-blue:#0881b9;
+$dark-blue:#262f41;
 
 $white5:rgba(255,255,255,.5);
 $white3:rgba(255,255,255,.3);
@@ -12,12 +17,38 @@ $white1:rgba(255,255,255,.1);
 COLORS:
 Squash: #eca349;
 Stone: #f2e5d5;
+Stone v2: #e6e1d5;
 Med Gray: #6e7f8c;
 Dark Gray #474f56;
 Med Blue #0881b9;
 Dark Blue #262f41;
 
 */
+
+#radx-colors .squash,
+#radx-colors .stone,
+#radx-colors .dark-gray,
+#radx-colors .med-dark-gray,
+#radx-colors .med-blue,
+#radx-colors .dark-blue {
+  height:100px;
+  color:$stone;
+}
+
+.squash         {background-color:$squash;}
+.stone          {background-color:$stone;}
+.dark-gray      {background-color:$dark-gray;}
+.med-dark-gray  {background-color:$med-dark-gray;}
+.med-blue       {background-color:$med-blue;}
+.dark-blue      {background-color:$dark-blue;}
+
+.squash-text         {color:$squash;}
+.stone-text          {color:$stone;}
+.dark-gray-text      {color:$dark-gray;}
+.med-dark-gray-text  {color:$med-dark-gray;}
+.med-blue-text       {color:$med-blue;}
+.dark-blue-text      {color:$dark-blue;}
+
 
 
 .navbar-brand img {margin-top:-10px;}
