@@ -13,18 +13,6 @@ $white5:rgba(255,255,255,.5);
 $white3:rgba(255,255,255,.3);
 $white1:rgba(255,255,255,.1);
 
-/*
-COLORS:
-Squash: #eca349;
-Stone: #f2e5d5;
-Stone v2: #e6e1d5;
-Med Gray: #6e7f8c;
-Dark Gray #474f56;
-Med Blue #0881b9;
-Dark Blue #262f41;
-
-*/
-
 #radx-colors .squash,
 #radx-colors .stone,
 #radx-colors .dark-gray,
@@ -48,6 +36,9 @@ Dark Blue #262f41;
 .med-dark-gray-text  {color:$med-dark-gray;}
 .med-blue-text       {color:$med-blue;}
 .dark-blue-text      {color:$dark-blue;}
+
+
+
 
 
 
@@ -151,3 +142,24 @@ div.quizbox {
     }
   }
 }
+
+
+
+// PANELS
+
+#panels {
+  
+  padding:20px 0px 80px 0px;
+  background-color:$med-dark-gray;
+}
+
+.panel {height:350px;}
+.panel-body table td {font-size:11px;}
+.panel-body table td.t-label {font-weight:bold;text-align:right;}
+.panel-body p {font-size:11px;margin-top:0; margin-bottom:1.5em;}
+.panel-body h6 {margin-bottom:0px;font-size:11px;font-weight:bold;}
+
+span.fa-check {color:green !important;}
+span.fa-times {color:red !important;}
+
+// PANELS END
