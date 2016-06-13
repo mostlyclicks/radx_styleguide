@@ -5,6 +5,7 @@ $navbar-border-radius: 0;
 $med-dark-gray:#363636;
 $dark-gray:#252525;
 $squash:#eca349;
+$yellow:#fff200;
 $stone:#e6e1d5;
 $med-blue:#0881b9;
 $dark-blue:#262f41;
@@ -60,9 +61,9 @@ $white1:rgba(255,255,255,.1);
 #quiz-template-nav {
   ul {margin:10px 0px;}
   a {
-    color:$squash;
+    color:$yellow;
     &:hover {
-      color:lighten($squash, 10%);
+      color:darken($yellow, 10%);
       background-color:lighten($med-dark-gray, 10%);
     }
   }
