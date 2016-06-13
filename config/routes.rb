@@ -2,12 +2,13 @@ Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
-  get "/pages"          => "pages#index"
-  get "/colors"         => "pages#colors"
-  get "/typography"     => "pages#typography"
-  get "/panels"         => "pages#panels"
-  get "/forms"          => "pages#forms"
-  get "/quiz-template"  => "pages#quiz_template"
+  get "/pages"           => "pages#index"
+  get "/colors"          => "pages#colors"
+  get "/typography"      => "pages#typography"
+  get "/panels"          => "pages#panels"
+  get "/forms"           => "pages#forms"
+  get "/quiz-template"   => "pages#quiz_template"
+  get "/report-template" => "pages#report_template"
 
 
   root 'pages#index'

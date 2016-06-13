@@ -51,6 +51,12 @@ $white1:rgba(255,255,255,.1);
   margin-top:-20px;
 }
 
+.report-template {
+  border:1px solid $med-dark-gray;
+  background-color:lighten($med-dark-gray, 70%);
+  height:100vh;
+}
+
 #quiz-template-nav {
   ul {margin:10px 0px;}
   a {
@@ -82,9 +88,17 @@ $white1:rgba(255,255,255,.1);
     .question {color:$white5;font-size:15px;font-weight:200;}
   }
 
+    #quiz-report-2 {
+    h3 {border-bottom:1px dotted $med-dark-gray;font-weight:200;padding-bottom:.5em;}
+    h3, h4 {color:$med-dark-gray;}
+    p, label {color:$med-dark-gray;font-weight:200;}
+
+    .question {color:$med-dark-gray;font-size:15px;font-weight:200;}
+  }
+
 div.quizbox {
   border:1px solid $white1;
-  height:620px;
+  height:85vh;
   padding:20px;
   margin-top:20px;
   display:block;
@@ -99,10 +113,17 @@ div.quizbox {
                       inset  0 -15px 15px -15px rgba(0,0,0,.5),;
 }
 
+#report-quizbox {
+  background-color:lighten($med-dark-gray, 70%);
+  border:1px solid lighten($med-dark-gray, 50%);
+
+}
+
 //CHECKBOX STYLES
   .quiz-checkbox {
     -webkit-appearance: none;
-    border:1px solid $white5;
+    border:1px solid $med-dark-gray;
+    // border:1px solid $white5;
     padding:7px;
     border-radius:2px;
     display:inline-block;
