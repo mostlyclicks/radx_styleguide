@@ -47,15 +47,21 @@ $white1:rgba(255,255,255,.1);
 
 // QUIZ TEMPLATE STYLES
 #quiz-template {
-  height:100vh;
+  height:calc(100vh - 62px);
   background-color:$med-dark-gray;
+  background-size:cover;
+  border:1px solid red;
   margin-top:-20px;
+  float:left;
+  width:100%;
 }
 
 .report-template {
   border:1px solid $med-dark-gray;
+  border:1px solid red;
   background-color:lighten($med-dark-gray, 70%);
-  height:100vh;
+  // height:calc(100vh - 138px);
+  // height:100vh;
 }
 
 #quiz-template-nav {
@@ -71,11 +77,15 @@ $white1:rgba(255,255,255,.1);
 
 #quiz-template-quiz {
   padding:0px 30px;
+  // height:100vh;
+  // // border:1px solid red;
 
   #quiz-inner {
     padding:20px 20px;
+
     background-color:$dark-gray;
-    min-height:85vh;
+    min-height:calc(100vh - 150px);
+    border:1px solid green;
 
     border-radius:7px;
 
@@ -99,7 +109,7 @@ $white1:rgba(255,255,255,.1);
 
 div.quizbox {
   border:1px solid $white1;
-  height:85vh;
+  height:calc(100vh - 370px);
   padding:20px;
   margin-top:20px;
   display:block;
